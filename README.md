@@ -1,1 +1,2 @@
-# tp2-backbone
+# TP2 Backbone
+By Manuel Lemaire

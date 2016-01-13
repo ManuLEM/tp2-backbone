@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste d'étudiants</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <form action="#">
+      <input type="text" placeholder="Prénom" class="student-name" required>
+      <input type="text" placeholder="Nom" class="student-surname" required>
+      <input type="submit" value="Ajouter">
+    </form>
+    <div class="stats">
+      <p>Il y a <span class="student-total">0</span> étudiants au total</p>
+      <p><span class="student-present-total">0</span> sont <span class="green">présents</span></p>
+      <p><span class="student-absent-total">0</span> sont <span class="red">absents</span></p>
+    </div>
+    <div class="students">
+      <h1>Liste des étudiants</h1>
+      <ul class='student-list'>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+  <script src="lib/backbone.localStorage.js"></script>
+
+  <script src="scripts/models/student-model.js"></script>
+  <script src="scripts/collections/student-colllection.js"></script>
+  <script src="scripts/views/student-list.js"></script>
+  <script src="scripts/apps.js"></script>
+</body>
+</html>
